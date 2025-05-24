@@ -1,13 +1,18 @@
 import streamlit as st
 
-# Set page title
+# Set title
 st.title('Este es mi segundo app con streamlit')
-st.markdown("<style>h1{color: blue;}</style>", unsafe_allow_html=True)
+st.markdown('<style>h1{color: blue;}</style>', unsafe_allow_html=True)
 
-# Sidebar with text input and button
-user_name = st.sidebar.text_input('Escribe tu nombre')
-if st.sidebar.button('Enviar nombre', key='submit_button'):
-    pass  # Button action can be defined here
+# Create a sidebar with a red background
+st.sidebar.markdown('<style>div{background-color: red;}</style>', unsafe_allow_html=True)
 
-# Main body content
-st.write(f'Bienvenido, {user_name}' if user_name else 'Bienvenido')
+# Add text input for user's name
+user_name = st.text_input('Escribe tu nombre aquí')
+
+# Add button to submit the name
+submit_btn = st.button('Enviar', key='submit_btn')
+
+# Display welcome message with user's name
+if submit_btn:
+    st.write(f'Bienvenido, {user_name}!')
