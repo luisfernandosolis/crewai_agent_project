@@ -1,16 +1,17 @@
 import streamlit as st
 
-# Set up the title
+# Title
 st.title('Mi primera app con Streamlit')
 
-# Create a sidebar
-st.sidebar.header('Ingrese su nombre')
-user_name = st.sidebar.text_input('Nombre')
-if st.sidebar.button('Enviar'):
-    st.write(f'Bienvenido {user_name}!')
+# Sidebar
+user_name = st.sidebar.text_input('Escribe tu nombre')
+submit_button = st.sidebar.button('Enviar nombre')
 
-# Main body of the app
-if st.button('Mostrar mensaje adicional'):
-    st.write('¡Gracias por usar la app!')
+# Main body
+if submit_button:
+    st.write(f"Bienvenido, {user_name}!")
 
-comment = st.text_area('Escriba un comentario aquí')
+    if st.button('¡Gracias por usar la app!'):
+        st.write('¡Gracias por usar la app!')
+    
+    st.text_area('Escribe un comentario')
