@@ -1,0 +1,17 @@
+[
+  {
+    "name": "about_us.py",
+    "path": "pages\\about_us.py",
+    "content": "# Import necessary libraries\nimport streamlit as st\n\n# Create a sidebar\nst.sidebar.header(\"Sidebar\")\n\n# Create a Hello World message\nst.write(\"Hello World\")"
+  },
+  {
+    "name": "app.py",
+    "path": "pages\\app.py",
+    "content": "import streamlit as st\n\n\nst.title(\"hello world!\")\n\ndef create():\n  # Add code for creating new data here\n  pass\n\ndef update():\n  # Add code for updating existing data here\n  pass\n\ndef delete():\n  # Add code for deleting data here\n  pass\n\ndef multiply(x, y):\n  # Add code for multiplying two numbers here\n  return x * y"
+  },
+  {
+    "name": "login_page.py",
+    "path": "pages\\login_page.py",
+    "content": "def sum_function(a, b):\n    return a + b\n\n\n# Existing content remains unchanged\n\n# New function to perform summation\n\ndef suma_function(a, b):\n    return a + b\n\n# Existing content remains unchanged"
+  }
+]
