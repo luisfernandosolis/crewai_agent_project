@@ -1,0 +1,27 @@
+[
+  {
+    "name": "app.py",
+    "path": "app.py",
+    "content": "generated Python code here"
+  },
+  {
+    "name": "about_us.py",
+    "path": "pages\\about_us.py",
+    "content": "# Import necessary libraries\nimport streamlit as st\n\n# Create a sidebar\nst.sidebar.header(\"Sidebar\")\n\n# Create a Hello World message\nst.write(\"Hello World\")"
+  },
+  {
+    "name": "app.py",
+    "path": "pages\\app.py",
+    "content": "import streamlit as st\n\n\nst.title(\"hello world!\")\n\ndef create():\n  # Add code for creating new data here\n  pass\n\ndef update():\n  # Add code for updating existing data here\n  pass\n\ndef delete():\n  # Add code for deleting data here\n  pass\n\ndef multiply(x, y):\n  # Add code for multiplying two numbers here\n  return x * y\n\ndef divide(x, y):\n  # Add code for dividing two numbers here\n  return x / y"
+  },
+  {
+    "name": "login.py",
+    "path": "pages\\login.py",
+    "content": "def division_function(a, b):\n    if b == 0:\n        return 'Division by zero is undefined'\n    return a / b\n\ndef division(a, b):\n    if b == 0:\n        return 'Division by zero is undefined'\n    return a / b"
+  },
+  {
+    "name": "login_page.py",
+    "path": "pages\\login_page.py",
+    "content": "def sum_function(a, b):\n    return a + b\n\n\n# Existing content remains unchanged\n\n# New function to perform summation\n\ndef get_function(id):\n    return id\n\n# Existing content remains unchanged"
+  }
+]

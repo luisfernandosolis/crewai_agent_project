@@ -1,0 +1,27 @@
+[
+  {
+    "name": "app.py",
+    "path": "app.py",
+    "content": "generated Python code"
+  },
+  {
+    "name": "about_us.py",
+    "path": "pages\\about_us.py",
+    "content": "# Import necessary libraries\nimport streamlit as st\n\n# Create a sidebar\nst.sidebar.header(\"Sidebar\")\n\n# Create a Hello World message\nst.write(\"Hello World\")"
+  },
+  {
+    "name": "app.py",
+    "path": "pages\\app.py",
+    "content": "import streamlit as st\n\n\nst.title(\"hello world!\")\n\ndef create():\n  # Add code for creating new data here\n  pass\n\ndef update():\n  # Add code for updating existing data here\n  pass\n\ndef delete():\n  # Add code for deleting data here\n  pass\n\ndef multiply(x, y):\n  # Add code for multiplying two numbers here\n  return x * y\n\ndef divide(x, y):\n  # Add code for dividing two numbers here\n  return x / y"
+  },
+  {
+    "name": "login.py",
+    "path": "pages\\login.py",
+    "content": "def division_function(a, b):\n    if b == 0:\n        return 'Division by zero is undefined'\n    return a / b\n\ndef division(a, b):\n    if b == 0:\n        return 'Division by zero is undefined'\n    return a / b"
+  },
+  {
+    "name": "login_page.py",
+    "path": "pages\\login_page.py",
+    "content": "#Import fastAPI\nfrom fastapi import FastAPI\n\n#Creating the FastAPI instance\napp = FastAPI()\n\n#Creating the login route\n@app.get(\"/login\")\ndef login():\n    return {\"message\": \"Welcome to the login page!\"}\n\n#Creating the register route\n@app.get(\"/register\")\ndef register():\n    return {\"message\": \"Welcome to the register page!\"}\n\n#Creating the update route\n@app.put(\"/update\")\ndef update():\n    return {\"message\": \"Welcome to the update page!\"}\n\n#Creating the delete route\n@app.delete(\"/delete\")\ndef delete():\n    return {\"message\": \"Welcome to the delete page!\"}"
+  }
+]
