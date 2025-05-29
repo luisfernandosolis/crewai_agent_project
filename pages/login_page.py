@@ -1,12 +1,25 @@
-def sum_function(a, b):
-    return a + b
+#Import fastAPI
+from fastapi import FastAPI
 
+#Creating the FastAPI instance
+app = FastAPI()
 
-# Existing content remains unchanged
+#Creating the login route
+@app.get("/login")
+def login():
+    return {"message": "Welcome to the login page!"}
 
-# New function to perform summation
+#Creating the register route
+@app.get("/register")
+def register():
+    return {"message": "Welcome to the register page!"}
 
-def suma_function(a, b):
-    return a + b
+#Creating the update route
+@app.put("/update")
+def update():
+    return {"message": "Welcome to the update page!"}
 
-# Existing content remains unchanged
+#Creating the delete route
+@app.delete("/delete")
+def delete():
+    return {"message": "Welcome to the delete page!"}
