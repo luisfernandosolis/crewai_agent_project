@@ -1,0 +1,17 @@
+[
+  {
+    "name": "about_us.py",
+    "path": "pages\\about_us.py",
+    "content": "# Import necessary libraries\nimport streamlit as st\n\n# Create a sidebar\nst.sidebar.header(\"Sidebar\")\n\n# Create a Hello World message\nst.write(\"Hello World\")"
+  },
+  {
+    "name": "app.py",
+    "path": "pages\\app.py",
+    "content": "import streamit as st\n\n\nst.title(\"hello world!\")\n\ndef create():\n  # Add code for creating new data here\n  pass\n\ndef update():\n  # Add code for updating existing data here\n  pass\n\ndef delete():\n  # Add code for deleting data here\n  pass"
+  },
+  {
+    "name": "login_page.py",
+    "path": "pages\\login_page.py",
+    "content": "def login_page(request):\n                    if request.method == 'POST':\n                        username = request.POST.get('username')\n                        password = request.POST.get('password')\n                        \n                        user = authenticate(username=username, password=password)\n                        if user is not None:\n                            login(request, user)\n                            return redirect('home')"
+  }
+]
