@@ -1,4 +1,4 @@
-import streamit as st
+import streamlit as st
 
 
 st.title("hello world!")
@@ -14,3 +14,7 @@ def update():
 def delete():
   # Add code for deleting data here
   pass
+
+def multiply(x, y):
+  # Add code for multiplying two numbers here
+  return x * y
